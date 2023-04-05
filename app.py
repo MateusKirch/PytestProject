@@ -1,4 +1,5 @@
 from input import *
+from cryptographyFramework import *
 
 #Username
 def validate_username():
@@ -39,3 +40,14 @@ print("O nome de usuário válido é:", username)
 print("A senha de usuário válida é:", password)
 print("A mensagem a ser criptografada é: ", message)
 
+# Inicializa Escrita Criptografia (SaveMessage)
+initializeWrite()
+encryptedText = encryptMessage(username, password, message)
+saveNewLine(encryptedText)
+
+# Inicializa Leitura Criptografia (printMessage)
+initializeRead()
+line1 = readNextLine()
+print(line1)
+# print(decryptMessage(username, password, line1))
+# line2 = readNextLine()

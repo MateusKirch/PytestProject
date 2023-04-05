@@ -38,6 +38,6 @@ def test_validate_password_uppercase():
 
 #Testes Mensagem
 
-def validate_message_length():
+def test_validate_message_length():
     assert validate_message_length("Essa é a minha mensagem") == True
     assert validate_message_length("Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa") == False
